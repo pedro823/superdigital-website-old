@@ -14,12 +14,19 @@ const Home: NextPage = () => {
 
       <Background />
       <main className={styles.main}>
-        <h1
-          className={styles.title + " " + styles.glitched + " " + styles.layers}
-          data-text="superdigitAl"
-        >
-          superdigitAl
-        </h1>
+        <div className={styles.titleContainer}>
+          <h2 className={`${styles.title} ${styles.fadedTitle}`}>superdigitAl</h2>
+          <h1
+            className={`${styles.title} ${styles.glitch} ${styles.layers}`}
+            data-text="superdigitAl"
+          >
+            <span>superdigitAl</span>
+          </h1>
+          <h2 className={`${styles.title} ${styles.fadedTitle}`}>superdigitAl</h2>
+        </div>
+        <section className={styles.content}>
+          <p> Test </p>
+        </section>
       </main>
     </div>
   );
